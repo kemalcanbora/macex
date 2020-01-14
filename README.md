@@ -1,4 +1,4 @@
 # Macex
 
 ## How yo use it ?
- > python3 extractor.py <path>
+ > python3 extractor.py < path >
