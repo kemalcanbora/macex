@@ -11,13 +11,14 @@ class Zipper:
     def __init__(self):
         self.output_path = os.getcwd()
         self.zipper_file = sys.argv[1]
-        ext = self.zipper_file.split(".")[1]
+        filename, ext = os.path.splitext(self.zipper_file)
+
 
         if ext == "7z":
             self.z7()
         elif ext == "rar":
             self.rar()
-        elif ext == "tar":
+        elif ext == "tar" or "gz":
             self.tar()
 
         elif ext == "zip":
